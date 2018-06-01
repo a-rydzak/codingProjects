@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#fff</color>
+
+
+
+    <color name="seekBarBackground">#000</color>
+    <color name="tourAudioBackgroung">#000</color>
+    <color name="allTextColor">#DBDBDB</color>
+    <color name="scrollViewColor">#2b2727</color>
+    <color name="naveMenueSelectorColor">#2b2727</color>
+    <color name="coolGrey">#191919</color>
+
+</resources>

@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Granbury Self Guided Ghost Tour</string>
+    <string name="title_activity_navigation">Map</string>
+    <string name="title_activity_page0">Page0Activity</string>
+    <string name="large_text">FSSFAD</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="nav_menu_page1_text"><b>1.</b>  <i><b>Hood County Jail Museum</b></i>\n Admission: $1 - $2\n Fri-Sun (1-4pm)\n Tour Length: 15 - 30 Minutes\n  <a href="http://www.hctxhs.org/Museums/jail.htm">
+            http://www.hctxhs.org/Museums/jail.htm</a></string>
+    <string name="page1_title"><b>Hood County Jail Museum</b></string>
+    <string name="page1_text"><u><b>History:</b></u>\n\nThe Hood County Museum was built in 1885 and functioned as a
+        jailhouse until the 1978 when it was converted into an office and museum. The first floor of the Jailhouse was
+        originally used as the living quarters and office area for Hood County deputies.  \n\nThe second floor contains three rooms
+        including gallows, a single cell for women and the insane, and a main cell.  The main cell is a giant iron gage containing
+        two separate cells with four bunk beds each.  The Giant cell has been known to have contained well over it’s eight occupant
+        housing design.\n\nAlthough there were never any executions at the jailhouse, the jailhouse experienced several suicides and
+        deaths which acts as the source for what many believe to cause ghost like activity.\n\nVisitors can walk into the single
+        and main cells to observe the cramped quarters, lonely bunks and ample graffiti left by former prisoners. Creepy, dark
+        and austere are just a few terms visitors often use to describe the second level of the jailhouse.
+        <u><b>\n\nGhost Story:\n\n</b></u>Bobbie Jordan, a former director of the Granbury Chamber of Commerce, worked in the
+        facility and would often experienced a strange presence and ghost like activity.
+        On occasion Bobbie would experience a presence moving down the stairs from the second floor to visit her in her
+        office.\n\nThe ghost often walked into Bobbie’s office and would stay in a favorite corner observing her work. On one
+        occasion Bobbie stated the ghost even sat in her lap scaring her and sending her rushing outside due to fear.  A multitude of
+        other visitors
+        have also experienced this presence in some way, shape or form.\n\nVisitors have experienced everything from light contact touching to
+        hearing ghostly voices. The screams of a women have also been recorded in the jailhouse.  The identity of the presence may be
+        contested depending on who you ask and there may be more than one presence. However, the Jailhouse Museum simply calls the
+        Ghost Lonely Joe.\n\nJoe’s identity was discovered during a séance where Joe communicated through an automatic writer.
+        Joe said he was a Native American lost from his tribe and was completely harmless.
+        Other paranormal groups claim the ghost to be Stephen Lee, a prisoner who wrote a poem in the main cell.
+        </string>
+
+    <string name="nav_menu_page2_text"><b>2.</b>   <i><b>Hood County Courthouse</b></i>\n Mon-Sat (8am-5pm)\n Plan A Visit To Granbury\n <a href="http://www.visitgranbury.com/">http://www.visitgranbury.com/</a></string>
+    <string name="page2_title"><b>Hood County Courthouse</b></string>
+    <string name="page2_text"><u><b>History:</b></u>\n\nThe Granbury Courthouse
+        is the fifth courthouse erected on current site. Built in 1891, the courthouse is
+        designed after the French second empire style. The first courthouse, built in 1867, was a 1-room log
+        cabin used to hold records, lawyers, land agents, and a mail station.\n\nIt was succeeded by 3 stone structures
+        then the current courthouse. The clock tower, added after completion of the last courthouse,
+        was reinforced with steel in 1969. In 2008 a grant of five million dollars was awarded to Hood County to
+        restore the interior of the courthouse.<u><b>\n\nGhost Story:</b></u>\n\nWhile there are no active ghosts recorded in the courthouse, the building itself is haunting.
+        Stroll by on a dark or cloudy day and try not to imagine that it does not secretly double as a haunted house.</string>
+
+
+    <string name="nav_menu_page3_text"><b>3.</b>   <i><b>The Nutt House Hotel\n</b></i> Haunted Hotel and Store\n Hotel Rates and Shop information\n<a href="http://www.nutt-hotel.com"> http://www.nutt-hotel.com</a></string>
+    <string name="page3_title"><b>The Nutt House Hotel</b></string>
+    <string name="page3_text"><u><b>History:</b></u>\n\nThe Nutt Hotel was opened hotel in 1910 and now
+        contains 7 hotel rooms decorated in the style of old Granbury. The are rooms bathed in southern luxury with
+        each room containing spa-like baths.  The hotel also still has it\'s original Grand Sitting Room and Grand Staircase.
+        \n\nThe owners of the Nutt House Hotel, the Nutt family and their descendants, have played key roles in both the founding of Granbury
+        and it’s current revitalization.
+        One of the family’s more prominent members, Mary Lou Watkins (The Great Granddaughter of David Nutt) served as
+        Granbury’s champion establishing downtown Granbury as a go to destination for travelers and tourists.\n\nDue to her efforts,
+        and the efforts of the local community, downtown Granbury was placed into the National Register of Historic places.  The town
+        erected a statue of Mary Lou across from the Nutt Hotel to memorialize her and her love of Granbury.
+        <u><b>\n\nGhost Story:</b></u>\n\nDespite passing away in 2001, some believe that Mary Lou Watkins so loved the
+        town of Granbury that she decided to take up permanent residence in the Nutt House Hotel after her death.
+        \n\nThere have been a myriad of classic ghost phenomena occurring in the hotel such as water faucets and lights turning on by
+        themselves.There have also been occurrences of doors slamming and strange noises.
+        Mary Lou has also been known to project audible laughter on occasion.\n\nGuests who have stayed in the Mary Lou
+        Watkins Sweet, Room 4, have been shaken awake during early morning hours and experienced sharp drops in temperature.
+        \n\nMary Lou’s activities continue today throughout the hotel letting everyone know she is still keeping a sharp eye on Granbury.</string>
+
+
+    <string name="nav_menu_page4_text"><b>4.</b>   <i><b>The Langdon Center</b></i>\n Cultural Center and Educational Center\n Mon-Sat (10am-4pm)\n<a href="http://www.tarleton.edu/langdoncenter/"> http://www.tarleton.edu/langdoncenter/</a></string>
+    <string name="page4_title"><b>The Langdon Center</b></string>
+    <string name="page4_text"><u><b>History:</b></u>\n\nAlonzo Peyton Gordon built The Langdon Center in 1882. The center is also known as
+        the Gordon House.  Alonzo Gordon was a successful businessman in Granbury before being elected
+        to the Texas state legislature in 1898.\n\n<u><b>Ghost Story:</b></u>\n\nPeople have experienced a multitude of ghostly experiences in the Gordon House and believe to have
+        spotted Gordon himself on occasion.  Employees at the house report doors opening and closing on their own and other typical ghost type
+        activities.  One of the creepier occupancies involves the doorbell ringing despite the doorbell being broken.\n\nGordon\'s
+        granddaughter, Audrey, has also been known to make frequent appearances.  Audrey passed away in 1908 at the age of
+        five with her cause of death unknown.  Audrey is characterized as being very playful and friendly.\n\nShe has been seen waving at
+        visitors and heard playing the piano.  Audrey is also known to seek the attention of small children and those who play
+        music inside the house. Audrey’s voice has been recorded on several occasions while music was being played in the house.
+</string>
+
+
+    <string name="nav_menu_page5_text"><b>5.</b>   <i><b> Granbury Opera House</b></i>\n Theatre Company and Concert
+        Hall\n Show Times and Schedules\n<a href="http://granburytheatrecompany.org/"> http://granburytheatrecompany.org/</a></string>
+    <string name="page5_title"><b>Granbury Opera House</b></string>
+    <string name="page5_text"><u><b>History:</b></u>\n\nThe Granbury opera house was built in 1886 during a
+        popular theatre moment which lasted from 1875 to 1890.  Opera houses like the one in Granbury served
+        as bastions to entertainment and culture for small towns throughout West Texas. <u><b>\n\nGhost Story:</b></u>\n\nThe opera house\'s most famous ghost is rumored that a man named John St. Helan
+        who confessed to being none other than John Wilkes Booth.  John St. Helan allegedly moved to Granbury
+        after the assassination of President Lincoln because John had family living nearby in town of
+        Glen Rose.\n\nJohn St. Helan stated that he was John Wilkes booth when he was on his supposed deathbed.
+        After making a full recovery he fled Granbury seeking to avoid the repercussions of his confession.
+        The fully story is documented in the book The Escape and
+        Suicide of John Wilkes Booth by Finis L. Bates.  John St. Helan avoid apprehension but later killed himself while under the name
+        David E. George.\n\nWhile in Granbury, John St. Helan worked as a bartender in the saloon next door to the opera house
+        and allegedly stayed in the opera house after his death.  Various ghost activities in the opera house have
+        been attributed to his spirit ever since. Employees and visitors have reported various incidents involving
+        strange noises, equipment turning on by itself, and suddenly disappearing persons or entities.\n\nOn one occasion
+        employees at the opera used a Ouija board to contact the spirits and could discern the identity and life stories of
+        three ghosts that might also be involved in the strange occurrences.</string>
+
+    <string name="nav_menu_page6_text"><b>6.</b>   <i><b>The Nutshell Eatery and Bakery</b></i>\n Mon-Sun (7am-5pm)\n Menu and Details\n <a href="https://www.facebook.com/Nutshell-Eatery-Bakery-122126497797628/">https://www.facebook.com/Nutshell-Eatery-Bakery-122126497797628/</a></string>
+    <string name="page6_title"><b>The Nutshell Eatery and Bakery</b></string>
+    <string name="page6_text"><u><b>History:</b></u>\n\nConstructed in 1885 the bakery is adjacent to the Granbury opera house and
+        used to be the Gordon’s Saloon where John St. Helan (possibly John Wilkes Booth) was a bartender.
+        <u><b>\n\nGhost Story:</b></u>\n\nThe restaurant is believed to be haunted by both the owner and
+        it’s employees.  Two of the bakery\'s prominent spirits include John St. Helan and a lady in red.\n\nThe lady in red is rumored to be the ghost of a women who worked on the second floor of the building
+        as a prostitute.  The lady in red has been seen at various locations on both the first and second floor.
+        Various pranks and incidents have been attributed to her presence.\n\nPlates of food have gone missing,
+        employees have reported hearing their names being called out by persons invisible and the intercom being
+        turned on and off.  On one occasion the owner experienced multiple pots and pans being thrown around
+        during some construction and remodeling.  This more extreme activity was attributed to the lady in red who
+        may have been angry about the changes.</string>
+
+    <string name="nav_menu_page7_text"><b>7.</b>   <i><b>Granbury Cemetery</b></i>\n 0.8 Miles North of Granbury Town Square\nGranbury Cemetery Records \n<a href="http://www.granburydepot.org/church/grancem.htm">http://www.granburydepot.org/church/grancem.htm</a></string>
+    <string name="page7_title"><b>Granbury Cemetery</b></string>
+    <string name="page7_text"><u><b>History:</b></u>\n\nThe Granbury Cemetery houses a wide variety of permanent residents including
+        early pioneers, local heroes, war veterans, and popular criminals.  The cemetery’s most famous
+        resident is that of General Granbury for who the town is named after.\n\nGeneral Granbury was a lawyer and county
+        judge before he organized a volunteer company for the Confederate Army. He eventually rose to the rank of Brigadier General and
+        was one of the six Confederate generals killed at the Battle of Franklin on November 30, 1864.\n\nA statue of General Granbury can be
+        found in the town square next to the courthouse.   Elizabeth Crockett, the widow of David Crockett, is buried in the nearby town of
+        Acton. Her grandson, Ashley Crockett, is buried in the Granbury Cemetery.  <u><b>\n\nGhost Story:</b></u>\n\n If the stories about
+        the cemetery are true then this location is the site of some
+        very bizarre activity.  Visitors and tourist groups have witnessed a multitude of shadow figures throughout
+        the cemetery weaving between graves.\n\nStrange coincidences, sounds, and voices are said to be abundant.  Other
+        visitors have even said they have been hit by rocks or scratched while trying to communicate with the dead residents.</string>
+
+    <string name="nav_menu_page8_text"><b>8.</b>   <i><b>Market On The Square</b></i>\nVintage Decor/Clothing/Antiques \nFacebook:\n<a href="https://www.facebook.com/GranburyMarketonthesquare">https://www.facebook.com/GranburyMarketonthesquare</a>  </string>
+    <string name="page8_title"><b>Market On The Square</b></string>
+    <string name="page8_text"><u><b>History:</b></u>\n\nThe Market On The Square started out as the Palace Saloon which, in 1889, was
+        converted into a dry goods store.  Apartments were added to the 2nd story in the mid 1990’s.
+        <u><b>\n\nGhost Story:</b></u>\n\nResidents of the 2nd story apartments and employees of the Market on The Square
+        have reportedly observed supernatural occurrences and the spirit of a faceless girl.  The faceless girl is rumored to be the spirit
+        of a little girl who died in some tragedy surrounding a circus or circus parade in Granbury.\n\nOne theory is that the little girl
+        fell out of the second floor while observing a circus parade, damaging her face in the fall killing her. She has been seen on
+        occasion with an obscured face that seems to be covered in some type of medical bandage or gauze.\n\nShe is credited with phantom
+        giggles, rattling pans, hiding objects from their owners and possibly causing the death of a pet dog.  Her spirit has also been
+        reported to move along the West side of the Town Square to other buildings and shops.</string>
+
+    <string name="nav_appreciation_text"><b></b> <b><i>Author\'s/Designer\'s Notes\n</i></b>Granbury Ghosts and Legends Tour.\nFri and Sat (7pm and 9:15pm)
+        <a href="https://www.granburytours.com/">\nhttps://www.granburytours.com/</a>  </string>
+    <string name="appreciation_title"><b>Appreciation</b> </string>
+    <string name="appreciation_text">If you liked this app you will greatly enjoy the Granbury Ghosts and Legends Tour. If you cannot make the tour check out
+        the book \'Haunted Granbury\' for an in depth guide to all of Granbury\'s Ghosts.\n\nI have visited Granbury on multiple occasions and have developed an appreciation for the city and surrounding area.  Small towns like Granbury are a thrill to visit
+    and I hope this app enhanced your experience.\n\nMuch thanks to the Granbury Ghosts and Legends Tour which served as the inspiration for this app and to the people of Granbury.</string>
+
+
+
+
+</resources>
