@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>Friends</title>
+    {% load static %}
+      <!-- The line above tells Django to be ready to listen for static files -->
+      <link rel="stylesheet" href="{% static 'Belt_2_app/styles.css' %}" media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+
+      {% if messages %}
+      <ul class="messages">
+          {% for message in messages %}
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+          {% endfor %}
+      </ul>
+      {% endif %}
+
+
+    <h1>Welcome {{friend.name}} here are a list of your friends</h1>
+    
+    <form action="/logout" method='POST'>
+                {% csrf_token %}
+                  <input class='button' type="submit" value="Logout">
+           </form>
+
+
+ <table>
+      <h1>Current Friends</h1>
+      <tr>
+        <th>Alias</th>
+        <th>Action</th> 
+      </tr>
+    {% for  friend in all_friends %}
+
+      <tr>
+        <td>{{friend.alias}}
+        </td>
+        <td id='last'>
+              <form action="/view/{{friend.id}}" method='POST'>
+                {% csrf_token %}
+                  <input class='button' type="submit" value="view">
+              </form>
+              <form action="/remove/{{friend.id}}" method='POST'>
+                {% csrf_token %}
+                  <input class='button' type="submit" value="Remove Friend">
+             </form>
+        </td>
+      </tr>
+    {% endfor %} 
+
+
+
+
+
+      <table>
+      <h1>Friends You Can Add</h1>
+      <tr>
+        <th>Alias</th>
+        <th>Actions</th>
+
+     {% for  friend in non_friends2 %}
+      <tr>
+      <td>
+        <form action="/view/{{friend.id}}" id='viewer' method='POST'>
+          {% csrf_token %}
+            <a href="#" onclick="document.getElementById('viewer').submit();"> {{friend.alias}} </a>
+          </form>
+        </td>
+        <td>
+            <form action="/add/{{friend.id}}" method='POST'>
+                {% csrf_token %}
+                  <input class='button' type="submit" value="Add as Friend">
+             </form>
+        </td>
+      </tr>
+
+    {% endfor %} 
+
+
+
+
+<h2></h2>
+</body>
+</html>

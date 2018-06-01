@@ -1,0 +1,5 @@
+ # MIGRATION STEPS
+# python manage.py makemigrations
+# python manage.py migrate
+# python manage.py shell
+# from apps.blogs_orm.models import *

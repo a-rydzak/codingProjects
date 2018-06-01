@@ -1,0 +1,1 @@
+python ../manage.py startapp {{nameOfApp}} (make this within the apps folder)

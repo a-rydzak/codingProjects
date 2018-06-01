@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Login/Regristration</title>
+   {% load static %}
+      <!-- The line above tells Django to be ready to listen for static files -->
+      <link rel="stylesheet" href="{% static 'Belt_2_app/styles.css' %}" media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+  <h1>Log In</h1>
+ <form action='/login' method='POST'>
+  {% csrf_token %}
+    <label for="email2">Enter Email:<input type="text" name="email2" id="email2"></label>
+    <label for="password2">Password:<input type="password" name="password2" id="password2"></label>
+    <input type="submit" value="Log In">
+  </form>
+
+<h1>{{request.session.success_message}}</h1>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+
+<h1>Register with us </h1>
+  <form action='/register' method='POST'>
+    {% csrf_token %}
+  	 <label for="name">Name:<input type="text" name="name" id="name"></label>
+  	 <label for="alias">Alias:<input type="text" name="alias" id="alias"></label>
+  	 <label for="email">Email:<input type="text" name="email" id="email"></label>
+     <label for="birth_date">Birth Date: <input type='date' name='birth_date' value="YYYY-MM-DD">
+    <label for="password">Password:<input type="password" name="password" id="password"></label>
+    <label for="password2">Re-Enter Password:<input type="password" name="password2" id="password2"></label>
+    <input type="submit" value="Register">
+  </form>
+
+<h2></h2>
+</body>
+</html>

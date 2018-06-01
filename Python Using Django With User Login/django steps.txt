@@ -1,0 +1,206 @@
+Using what you've learned, please do the following:
+
+Create a new project 
+Have the following URL either display a simple 
+HttpResponse or redirect to a different URL for the 
+following apps blogs app
+-------------------------------------------------------------
+Creating a project
+Let's make a project! Navigate to a location where you want to create your project (e.g. either your desktop folder or your user folder). We need to do a little set-up work to get our Django project up and running:
+
+  > django-admin startproject main
+This is going to create the main project for us, from which we’re going to have to do a few small set-up things before we can really get going:
+
+NOTE: All our videos are using bash, but to use the same commands on Windows Command Prompt, the analogous command for touch is nul>
+
+Navigate into the main directory that you just created. At this point you could run "python manage.py runserver" and take a look at what your development server delivers to the browser.
+
+  > cd main
+  # Make a new apps directory
+  > mkdir apps
+  # Navigate into apps
+  > cd apps
+Next you'll create an __init__.py file. This lets the Python interpreter know that this folder is present and may be accessed. Now, other Python modules can look in this directory and access the files and therefore the code they contain. Don't forget this step!
+
+# Bash: (Mac, Linux)
+  > touch __init__.py
+# PCs: (Command Prompt)
+  > nul> __init__.py
+Notice that when you started a project a manage.py file was automatically created. That file can be called using one of several commands to request a specific operation. Let's do that from within the apps directory to start a new app.
+
+  > python ../manage.py startapp first_app
+
+
+# Bash: (Mac, Linux)
+  > touch __init__.py
+# PCs: (Command Prompt)
+  > nul> __init__.py
+----------------------------------------------------------------------------------
+Process: cretae the Django project
+	 create the apps directory
+	 create the 'dunder' file the __init__.py in apps folder
+	 create the django app first_app
+	 create the route file urls.py
+	 create the methods views.py
+	 create the view directories under first_app/Templates/first_app/index.html and show_users.html
+	 the main folder in main must contain the settings.py which must be updated to include your app
+
+Step 1: in command propmt
+	cd desktop 
+	virtualenv djangoEnv
+	cd djangoEnv
+	cd Scripts
+	activate
+	cd..
+	pip install django
+	cd..
+Step 2:
+	cd desktop
+	django-admin startproject main
+	cd main
+	md apps
+ 	cd apps
+	copy NUL __init__.py
+	python ../manage.py startapp blogs_app---- C:\Users\BroBoFett\Desktop\main\apps> done within apps to create app !!!!!!!!!!!To run server
+		directory
+
+	python ../manage.py runserver
+	
+Step 3:  In settings.py (this file lives inside the main directory. The main directory is alongside apps and manage.py) 
+	 we are going to have to add our application to the project. That means adding apps.first_app to our 
+	 INSTALLED_APPS list:
+		  # Inside main/settings.py
+  INSTALLED_APPS = [
+      'django.contrib.admin',
+      'django.contrib.auth',
+      'django.contrib.contenttypes',
+      'django.contrib.sessions',
+      'django.contrib.messages',
+      'django.contrib.staticfiles',
+  ]
+  # BECOMES:
+   INSTALLED_APPS = [
+       'apps.first_app', ### added this line!
+       'django.contrib.admin',
+       'django.contrib.auth',
+       'django.contrib.contenttypes',
+       'django.contrib.sessions',
+       'django.contrib.messages',
+       'django.contrib.staticfiles',
+   ]
+
+
+Step 4:  Go to main folder
+	 python manage.py runserver (run in the command prompt in the main folder)
+	 
+Step 5:	 go to main/urls.py and modify it 
+	
+	  from django.conf.urls import url, include
+	  from django.contrib import admin
+
+	   urlpatterns = [
+			url(r'^', include('apps.first_app.urls')),
+    			url(r'^admin/', admin.site.urls)
+	   ]
+
+Step 6:	Our app's urls file doesn't exist yet. Let's make it. From the command line:
+	apps/first_app/urls.py
+
+ 	 from django.conf.urls import url
+  	 from . import views           # This line is new!
+  	 urlpatterns = [
+         url(r'^$', views.index)     # This line has changed!
+         ]
+
+
+Step 7:	apps/first_app/views.py
+
+	 	# -*- coding: utf-8 -*-
+		from __future__ import unicode_literals
+		from django.shortcuts import render
+		from django.shortcuts import render, HttpResponse, redirect
+ 	        # the index function is called when root is visited
+  
+		def index(request):
+			response = "Hello, I am your first request!"
+			return HttpResponse(response)
+
+Step 8.  To use session!!!
+	python manage.py makemigrations
+  	> python manage.py migrate
+
+
+
+
+
+
+
+
+
+
+
+for ORM--a model folder was made in the blogs_orm app the model contained the models file
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py shell
+from apps.blogs_orm.models import *
+
+reating a new record
+Blog.objects.create({{field1}}="{{value}}", {{field2}}="{{value}}", etc) # creates a new record in the Blog table
+Blog.objects.create(name="Star Wars Blog", desc="Everything about Star Wars") # creates a new blog record
+Blog.objects.create(name="CodingDojo Blog") # creates a new blog record with the empty desc field
+Alternative way of creating a record
+b = Blog(name="Disney Blog", desc="Disney stuff")
+b.name = "Disney Blog!"
+b.desc = "Disney stuff!!!"
+b.save()
+Basic Retrieval
+Blog.objects.first() - retrieves the first record in the Blog table
+Blog.objects.last() - retrieves the last record in the Blog table
+Blog.objects.all() - retrieves all records in the Blog table
+Blog.objects.count() - shows how many records are in the Blog table
+Updating the record - once you obtain an object that has the record you want to modify, use save() to update the record.  For example
+b = Blog.objects.first() # gets the first record in the blogs table
+b.name = "CodingDojo Blog"  # set name to be "CodingDojo Blog"
+b.save() # updates the blog record
+Deleting the record - use delete().  For example
+b = Blog.objects.get(id=1)
+b.delete() # deletes that particular record
+Other methods to retrieve records
+Blog.objects.get(id=1) - retrieves where id is 1; get only retrieves 1 record
+Blog.objects.filter(name="mike") - retrieves records where name is "mike"; returns multiple records
+Blog.objects.exclude(name="mike") - opposite of filter; returns multiple records
+Blog.objects.order_by("created_at") - orders by created_date field
+Blog.objects.order_by("-created_at") - reverses the order
+Blog.objects.raw("SELECT * FROM {{app_name}}_{{class/table name}}") - performs a raw SQL query
+Blog.objects.first().comments.all() - grabs all comments from the first Blog
+Blog.objects.get(id=15).comments.first() - grabs the first comment from Blog id = 15
+Comment.objects.get(id=15).blog.name - returns the name of the blog where Comment id = 15 belongs to
+Setting Relationship
+Comment.objects.create(blog=Blog.objects.get(id=1), comment="test") - create a new comment where the comment's blog points to Blog.objects.get(id=1).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

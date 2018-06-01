@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>View Friend</title>
+    {% load static %}
+      <!-- The line above tells Django to be ready to listen for static files -->
+      <link rel="stylesheet" href="{% static 'Belt_2_app/styles.css' %}" media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+ <form action="/logout" method='POST'>
+                {% csrf_token %}
+                  <input class='button' type="submit" value="Logout">
+           </form>
+            <form action="/home" method='POST'>
+                {% csrf_token %}
+                  <input class='button' type="submit" value="home">
+           </form>
+      {% if messages %}
+      <ul class="messages">
+          {% for message in messages %}
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+          {% endfor %}
+      </ul>
+      {% endif %}
+
+
+      <h1>{{friend.alias}}'s Profile!</h1>
+      <h2>{{friend.name}}</h2>
+      <h2>{{friend.email}}</h2>
+
+
+
+
+
+
+<h2></h2>
+</body>
+</html>

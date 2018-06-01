@@ -1,0 +1,8 @@
+bcrypt==3.1.4
+beautifulsoup4==4.5.3
+cffi==1.11.4
+Django==1.11.10
+pycparser==2.18
+pytz==2018.3
+requests==2.13.0
+six==1.11.0
