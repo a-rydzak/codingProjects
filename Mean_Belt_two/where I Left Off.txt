@@ -1,0 +1,3 @@
+updateOneObject(): not complete yet
+
+find by ._id and add +1 likes

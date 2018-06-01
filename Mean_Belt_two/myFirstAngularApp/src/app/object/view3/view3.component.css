@@ -1,0 +1,44 @@
+#container{
+
+}
+#details-container{
+	margin: 0 auto;
+
+	max-width: 500px;
+	border: solid;
+	border-color: black;
+	text-align: center;
+}
+
+#heading{
+	max-width: 500px;
+	border: solid;
+	border-color: black;
+}
+#header{
+	display: inline-block;
+}
+
+#home{
+	margin-left: 100px;
+	display: inline-block;
+	border: solid;
+	margin
+	border-color: black;
+}
+.row{
+	display: block;
+	max-width: 500px;
+}
+.title{
+	margin-left: 0;
+	vertical-align: center;
+	min-width:200px;
+	display: inline-block;
+}
+.data{
+	text-align: left;
+	min-width:300px;
+	vertical-align: center;
+	display: inline-block;
+}

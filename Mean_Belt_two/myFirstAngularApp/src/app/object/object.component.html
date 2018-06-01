@@ -1,0 +1,27 @@
+<h1>Pet Shelter</h1>  
+
+<a [routerLink]="['/pets/new']">Add A Pet!</a> 
+
+
+  <div id='object_table'>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Created At</th>
+        <th>Actions</th>
+
+      </tr>
+      <tr *ngFor= "let object of objects">
+        <td>{{object.object_name}}</td>
+        <td>{{object.object_type}}</td>
+        <!-- angular format date -->
+        <td>{{object.createdAt | date:'MMM, dd, yyyy'}}</td>
+        <!-- https://docs.angularjs.org/api/ng/filter/date -->
+        <!-- <td>{{object.createdAt | date:'MM/dd/yyyy @ h:mma'}}</td> -->
+        <td> <a (click)="details(object)" [routerLink]="['/pets',object._id]"><button>Pet Details</button></a>  <a (click)="edit(object)" [routerLink]="['/pets',object._id,'edit']"><button>Edit Pet</button></a> </td>
+      </tr>
+    </table>
+  </div>
+
+<!-- [routerLink]="['/pets',object._id]" -->

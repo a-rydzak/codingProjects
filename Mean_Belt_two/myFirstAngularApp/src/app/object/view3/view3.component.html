@@ -1,0 +1,38 @@
+<div id='container'>
+	<div id='details-container'>
+
+		<div id='heading'>
+			<h1 id='header'>Pet Shelter</h1>
+			<a  [routerLink]="['/pets']" id='home'>Home</a>
+		</div>
+		<h2>Details about {{pass_object.object_name}} </h2>
+
+		<div class='row'>
+			<h4 class='title'>Pet Type:</h4>
+			<p class='data'>{{pass_object.object_type}}</p>
+		</div>
+
+		<div class='row'>
+			<h4 class='title'>Pet Description:</h4>
+			<p class='data'>{{pass_object.object_description}}</p>
+		</div>
+
+		<div class='row'>
+			<h4 class='title'>skills</h4>
+			<p class='data'> {{pass_object.skill_1}}<br/>{{pass_object.skill_2}}<br/>{{pass_object.skill_3}}</p>
+		</div>
+
+		<div class='row'>
+			<h4 class='title'>Likes:</h4>
+			<p class='data'>{{pass_object.likes}} Likes</p>
+		</div>
+
+		<div class='row'>
+			<a (click)="addLike(pass_object)"  *ngIf="hidden == false"><button>Like</button></a>
+
+			<a (click)="adopt(pass_object)" [routerLink]="['/pets']"><button>Adopt</button></a>
+		</div>
+		<!-- [routerLink]="['/pets', pass_object._id]" -->
+	</div>
+</div>
+
