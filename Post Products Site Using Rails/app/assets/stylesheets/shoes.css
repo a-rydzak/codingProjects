@@ -1,0 +1,81 @@
+#top{
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+}
+
+.container{
+	
+}
+
+
+form{
+	max-width: 400px;
+	display: inline-block;
+	border:solid;
+	border-color:gray;
+	vertical-align: top;
+	}
+
+
+.form_row {
+	margin-top: 5px;
+	display: flex;
+}
+
+.form_row label {
+  display: inline-block;
+  width: 75px;
+  margin-right:10px
+  flex:1;
+}
+
+.form_row input{
+	flex:6;
+}
+
+.form_row select{
+flex:1;
+margin-left: 10px;
+}
+
+table{
+	min-width:100%;
+}
+
+#header{
+	text-align: center;
+}
+
+.item{
+	margin-right: 30px;
+}
+
+#events_in_state{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+    width: 100%;
+
+
+}
+
+#events_in_state td, #events_in_state thead {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#events_in_state tr:nth-child(even){
+	background-color: lightgrey;
+}
+
+/*#events_in_state tr:hover {
+	background-color: darkgray;
+}*/
+
+#events_in_state thead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkgray;
+    color: white;
+}

@@ -1,0 +1,144 @@
+<div id='container'>
+  
+  <div id='top'>
+    <a href="/shoes" class='item'>Go To All Products</a>
+    <a href="/logout" class='item'>logout</a>
+  </div>
+
+  <h1>Hi, <%=@user.first_name%>!</h1>
+
+  <form id='make_product' action='/create/<%= @user.id%>' method='post'>
+      <h3>Sell Product</h3>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+      <div class="form_row">
+        <label for='name'>Name</label>
+        <input type="text" name="name" id='name'>
+      </div>  
+
+      <div class="form_row">
+        <label for="amount">Amount $</label>
+        <input id="amount"  name="amount" type="number" min="1" step=".01" value='0.00' />
+      </div>  
+
+      <div class="form_row" id='sell_container'>
+        <input type='submit' value='Sell' id='sell_button'/>
+      </div>  
+    </form>
+
+<% if flash[:errors]  %>
+ <div id='errors'>
+        <table>
+          <thead>
+            <tr>
+              <td>Errors</td>
+            </tr>
+          </thead>
+          <tbody>
+          <% flash[:errors].each do |error|  %>
+            <tr>
+              <td><%= error  %></td>
+            </tr>
+          <% end %>  
+          </tbody>
+        </table>
+    </div>
+<% end %>
+
+
+    <div id='events_in_state'>
+      <div id=''>
+      <h5>Products Not Yet Sold</h5>
+    </div>
+        <table>
+          <thead>
+            <tr>
+              <td>Product</td>
+              <td>Date Posted</td>
+              <td>Amount</td>
+              <td>Action</td>
+            </tr>
+          </thead>
+          <tbody>
+          <% @products_to_sell.each do |product| %>
+          
+            <tr>
+              <td> <%= product.product_name  %> </td>
+              <td><%= product.created_at.strftime("%b %d, %Y")  %></td>
+              <td>$<%= product.product_amount %></td>
+                <td>
+                  <a href="/remove/<%= product.id  %>">Remove</a> 
+                </td>
+    
+            </tr>
+          <% end %>  
+          </tbody>
+        </table>
+    </div>
+
+    <div id='events_in_state'>
+      <div id=''>
+      <h5>Sales</h5>
+    </div>
+        <table>
+          <thead>
+            <tr>
+              <td>Product</td>
+              <td>Date Bought</td>
+              <td>Buyer</td>
+              <td>Amount</td>
+            </tr>
+          </thead>
+          <tbody>
+          <% @sold_products.each do |product| %>
+          
+            <tr>
+              <td> <%= product.product_name  %> </td>
+              <td><%= product.updated_at.strftime("%b %d, %Y")  %></td>
+              <td><%= product.product_buyer %></td>
+              <td>$<%= product.product_amount %></td>
+    
+            </tr>
+          <% end %>  
+          </tbody>
+        </table>
+          <div id='ender'>
+            <h5>Total: $<%= @amount_sold %></h5>
+          </div>
+    </div>
+
+
+<div id='events_in_state'>
+      <div id=''>
+      <h5>Purchases</h5>
+    </div>
+        <table>
+          <thead>
+            <tr>
+              <td>Product</td>
+              <td>Date Bought</td>
+              <td>Seller</td>
+              <td>Amount</td>
+            </tr>
+          </thead>
+          <tbody>
+          <% @bought_products.each do |product| %>
+          
+            <tr>
+              <td> <%= product.product_name  %> </td>
+              <td><%= product.updated_at.strftime("%b %d, %Y")  %></td>
+              <td><%= product.product_seller %></td>
+              <td>$<%= product.product_amount %></td>
+    
+            </tr>
+          <% end %>  
+          </tbody>
+        </table>
+          <div id='ender'>
+            <h5>Total: $<%= @amount_bought %></h5>
+          </div>
+    </div>
+
+
+
+</div>

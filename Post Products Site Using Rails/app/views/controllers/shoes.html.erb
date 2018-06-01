@@ -1,0 +1,50 @@
+<div id='container'>
+  
+  <div id='top'>
+    <a href="/dashboard/<%= @user.id %>" class='item'>Go To Dashboard</a>
+    <a href="/logout" class='item'>logout</a>
+  </div>
+
+  <h1>Welcome, <%=@user.first_name%>!</h1>
+
+    <div id='events_in_state'>
+      <div id='header'>
+      <h5>All Products</h5>
+    </div>
+        <table>
+          <thead>
+            <tr>
+              <td>Product</td>
+              <td>Seller</td>
+              <td>Date Posted</td>
+              <td>Amount</td>
+              <td>Action</td>
+            </tr>
+          </thead>
+          <tbody>
+          <% @products.each do |product| %>
+          <% if product.product_status == 'sale' %>
+            <tr>
+              <td> <%= product.product_name  %> </td>
+              <td><%=  product.product_seller %></td>
+              <td><%= product.created_at.strftime("%b %d, %Y") %> </td>
+              <td>$<%= product.product_amount %></td>
+
+
+              <% if product.user_id == @user.id %>
+                <td>
+                  <a href="/purchase/<%= product.id  %>">Buy</a> || <a href="/remove/<%= product.id  %>">Remove</a>
+                </td>
+              <% end%>
+            <% if product.user_id != @user.id %>
+                <td>
+                  <a href="/purchase/<%= product.id  %>">Buy</a>
+                </td>
+              <% end%>
+              <% end%>
+            </tr>
+          <% end %>  
+          </tbody>
+        </table>
+    </div>
+</div>
