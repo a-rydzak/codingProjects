@@ -1,0 +1,305 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+
+
+#add-vehicle-button-container{
+	margin-top:100px;
+	text-align: center;
+
+}
+
+input{
+	
+}
+
+#button {
+    background-color: #3acec2; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+.button2{
+	 background-color: #3acec2; 
+    border: none;
+    color: white;
+    width: 275px;
+
+}
+
+#upper-half{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+
+}
+#detailed-info-fields{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+#vehicle-container{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	justify-content: center;
+	margin-top: 15px;
+
+}
+
+#vehicle-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+
+}
+
+#vehicle{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#actual-vehicle{
+	max-height: None;
+	max-width: 310px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	border-color: black;
+	border:solid;
+}
+#assign-soldiers{
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: space-around;
+	max-height: 400px;
+
+}
+.list-ordering{
+	max-width: 200px;
+	font-size: .9em;
+}
+
+#delete-button{
+	width: 60px;
+	height: 20px;
+	margin-left: 5px;
+	background-color: #3acec2;
+	color:white;
+}
+
+#form-container{
+
+	border-color: black;
+	border:solid;
+
+}
+
+.input{
+	 width: 100%;
+    padding: 5px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;  
+}
+.button3{
+	color:white;
+	background-color: red;
+	}
+form{
+	background-color: lightgrey;
+	max-height: 2368px;
+}
+h1{
+
+	font-size: 1.35em;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+	margin: 0 0 1em 0;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin: 0 0 .8em 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	font-weight: bold;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+.banner,
+.main-footer {
+	text-align: center;
+}
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
+}
+.col {
+	padding: 1em;
+	background: #edf4f7;
+	border-radius: .35em;
+	margin: 0 .5em .8em;
+}
+.main-footer {
+	margin-top:70px;
+	padding: 2em 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #d9e4ea;
+    text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+.headline {
+	margin-bottom: 0;
+}
+.feat-img {
+	border-radius: 5px;
+}
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .625em 1.25em;
+	background: #3acec2;
+	border-radius: .35em;
+}
+.main-header {
+	overflow: hidden;
+	max-height: 275px;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    min-width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+/*.main-header {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+*/
+/* Change background on mouse-over */
+/*.main-nav a:hover {
+    background: #ddd;
+    color: black;
+}*/
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+		}
+
+}
+@media (max-width: 800px) {
+
+#add-vehicle-button-container{
+	margin-top:230px;
+	text-align: center;
+
+}
+
+}
