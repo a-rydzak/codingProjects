@@ -1,0 +1,40 @@
+Authors:
+
+Andrew Rydzak and Swanand Kulkarni
+
+Description:
+The StarCraft network (directed, weighted), is a network created from 
+61 scraped minor tournaments listed on liquipedia.  A list of all minor tournaments 
+scraped, and their sources, can be found in the project Starcraft_scrape.py file.  In the network
+a node is represented by a unique player.  A weighted direct edge leaves  
+player A to another player B when player a has lost 1 or more matches to player B.  
+The visa versa is true for an edge that leave Player B to Player A.  Players/nodes with 
+a the most out degrees have lost the most matches.  Players/nodes with the most in degrees
+are have won the most matches.  There are a variety of characteristics 
+discussed and mentioned "G04_axr163231_smk160830.ppx."  Beyond network measurements, 
+rivalry detection is identified utilizing co citation and graphlets for players who have
+never played eachother. The PowerPoint file, "G04_axr163231_smk160830.ppx",
+demonstrates the data and how the data is displayed.
+ 
+
+Nodes: 752
+Edges: 2,446
+Note:  See the PowerPoint presentation for other traits and characteristics.
+       Other files that will provide data of note include Starcraft_Tests.py and
+       Starcefat_Project.py.
+
+Files:
+G04_axr163231_smk160830.ppx: This is the powerpoint presentation file.
+Starcraft.edgelist:          The generated edgelist.  Created using Starcraft_Graph_Source.py.
+Starcraft_Graph.gml:         The gml file. Created using Starcraft_Graph_Source.py.
+Starcraft_Graph_Source.py:   This file is used to creathe the gml and edgelist files.
+Starcefat_Project.py:        This file contains all the code to create graphlets used in the project.
+Starcraft_Scrape.py:         This is the scraping code used to generate the Starcraft_Graph_Source.py file.
+Starcraft_Tests.py:          This file contains all the code for a variety of network measurments and analysis.
+
+Technical Details:
+Please see the attached PowerPoint presentation.
+
+Data Source:
+Tournament Lists: https://wiki.teamliquid.net/starcraft2/Minor_Tournaments
+from this page 61 pages were scraped.  Please see the Starcraft_scrape.py file for each website listed.
